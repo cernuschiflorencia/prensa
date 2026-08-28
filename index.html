@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COMBICALIMBA | Interactive Media Room & Press Kit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .glass-nav { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(16px); }
+    .card-hover { transition: all 0.25s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 30px -10px rgba(56, 189, 248, 0.15); }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950">
+
+  <!-- TOP APP BAR -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 to-sky-400 flex items-center justify-center shadow-lg shadow-amber-500/20 font-black text-slate-950 text-base">
+          C
+        </div>
+        <div>
+          <span class="text-base font-extrabold tracking-tight text-white block leading-none">COMBICALIMBA</span>
+          <span class="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Sala de Prensa Digital</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/5491153842626?text=Hola%20Flor%20y%20Gise!%20Me%20gustar%C3%ADa%20coordinar%20una%20nota/entrevista%20con%20Combicalimba" target="_blank" class="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-3 py-2 rounded-lg transition-all shadow-md shadow-emerald-500/15">
+          <span>💬</span> <span class="hidden sm:inline">WhatsApp Prensa</span><span class="sm:hidden">Contacto</span>
+        </a>
+        <button onclick="openPitchGenerator()" class="inline-flex items-center gap-1 text-xs uppercase tracking-wider font-bold bg-amber-400 hover:bg-amber-300 text-slate-950 px-3 py-2 rounded-lg transition-all shadow-md shadow-amber-400/15">
+          <span>⚡</span> <span class="hidden sm:inline">Generar Pitch</span><span class="sm:hidden">Pitch</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="pt-10 pb-12 border-b border-slate-800/80 bg-gradient-to-b from-slate-900/50 to-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-amber-400 mb-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Expedición Continental Completa • Munro a Prudhoe Bay (Alaska)
+          </div>
+          <h1 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            Sala de Prensa Digital & Media Kit
+          </h1>
+          <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+            12 ángulos editoriales listos para publicar, biografías oficiales y contacto directo para coordinar notas por videollamada satelital.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2.5 min-w-[280px]">
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="text-xl sm:text-2xl font-black text-white">+101.000</div>
+            <div class="text-[10px] text-slate-400 font-medium">Kilómetros en Ruta</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="text-xl sm:text-2xl font-black text-amber-400">7+ Años</div>
+            <div class="text-[10px] text-slate-400 font-medium">Desde Marzo 2019</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="text-xl sm:text-2xl font-black text-sky-400">Calimba 2.0</div>
+            <div class="text-[10px] text-slate-400 font-medium">Ford Transit Autosuficiente</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="text-xl sm:text-2xl font-black text-emerald-400">12 Temas</div>
+            <div class="text-[10px] text-slate-400 font-medium">Ángulos con WhatsApp</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOCERAS -->
+  <section class="py-10 border-b border-slate-800/80 bg-slate-900/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">Vocera Principal</span>
+            <h3 class="text-lg font-bold text-white mt-2">Flor Cernuschi</h3>
+            <p class="text-xs text-sky-300 font-medium">Lic. en RRPP • Coach Ontológica Profesional • Instructora SDI & FRTI</p>
+            <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
+              Liderazgo, rediseño de vida, comunicación estratégica, superación de crisis y educación en buceo.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400 flex items-center justify-between">
+            <span>Coaching • Convivencia • Resiliencia</span>
+            <a href="https://wa.me/5491153842626?text=Hola%20Flor!%20Me%20gustar%C3%ADa%20coordinar%20una%20entrevista%20sobre%20coaching%20y%20comunicaci%C3%B3n" target="_blank" class="text-emerald-400 font-bold hover:underline">Escribir a Flor →</a>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-sky-400 bg-sky-400/10 px-2 py-0.5 rounded">Vocera & Tech Lead</span>
+            <h3 class="text-lg font-bold text-white mt-2">Gise Ares</h3>
+            <p class="text-xs text-sky-300 font-medium">Desarrolladora Web • Especialista en Tecnología & Datos • Instructora de Buceo</p>
+            <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
+              Infraestructura tecnológica nómada, conectividad satelital Starlink, arquitectura camper y desarrollo web.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400 flex items-center justify-between">
+            <span>Tech Nómada • IA • Ford Transit</span>
+            <a href="https://wa.me/5491153842626?text=Hola%20Gise!%20Me%20gustar%C3%ADa%20coordinar%20una%20entrevista%20sobre%20tecnolog%C3%ADa%20y%20desarrollo" target="_blank" class="text-emerald-400 font-bold hover:underline">Escribir a Gise →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANGULOS EDITORIALES -->
+  <section class="py-12" id="angulos">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Banco de Notas</span>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-white">12 Ángulos con WhatsApp Directo</h2>
+        </div>
+
+        <div class="flex flex-wrap gap-1.5 text-xs" id="filterContainer">
+          <button onclick="filterArticles('all')" class="filter-btn active px-2.5 py-1 rounded-lg bg-amber-400 text-slate-950 font-bold" data-filter="all">Todos (12)</button>
+          <button onclick="filterArticles('lifestyle')" class="filter-btn px-2.5 py-1 rounded-lg bg-slate-900 text-slate-300 font-semibold border border-slate-800" data-filter="lifestyle">Estilo de Vida</button>
+          <button onclick="filterArticles('negocios')" class="filter-btn px-2.5 py-1 rounded-lg bg-slate-900 text-slate-300 font-semibold border border-slate-800" data-filter="negocios">Economía & Finanzas</button>
+          <button onclick="filterArticles('buceo')" class="filter-btn px-2.5 py-1 rounded-lg bg-slate-900 text-slate-300 font-semibold border border-slate-800" data-filter="buceo">Buceo</button>
+          <button onclick="filterArticles('tech')" class="filter-btn px-2.5 py-1 rounded-lg bg-slate-900 text-slate-300 font-semibold border border-slate-800" data-filter="tech">Tech & Camper</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="articlesGrid"></div>
+
+    </div>
+  </section>
+
+  <!-- MODAL FOR FULL ARTICLE -->
+  <div id="articleModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+      
+      <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/90">
+        <div class="flex items-center gap-2">
+          <span id="modalCategory" class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 px-2.5 py-0.5 rounded-full"></span>
+          <span id="modalFormat" class="text-xs text-slate-400"></span>
+        </div>
+        <button onclick="closeModal()" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">✕</button>
+      </div>
+
+      <div class="p-5 overflow-y-auto space-y-3">
+        <h3 id="modalTitle" class="text-lg sm:text-xl font-bold text-white leading-snug"></h3>
+        <p id="modalSubtitle" class="text-xs sm:text-sm font-semibold text-sky-300 italic border-l-2 border-sky-400 pl-3 py-1 bg-sky-400/5"></p>
+        
+        <div class="pt-2">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Cuerpo del Comunicado:</h4>
+          <p id="modalBody" class="text-xs sm:text-sm text-slate-300 leading-relaxed whitespace-pre-line"></p>
+        </div>
+
+        <div class="pt-2 border-t border-slate-800">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Ganchos Periodísticos:</h4>
+          <ul id="modalHooks" class="list-disc list-inside text-xs text-slate-300 space-y-1"></ul>
+        </div>
+      </div>
+
+      <div class="p-4 border-t border-slate-800 bg-slate-950/60 flex flex-col sm:flex-row items-center justify-between gap-2.5">
+        <button id="copyModalBtn" onclick="copyModalContent()" class="w-full sm:w-auto text-xs font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 px-3.5 py-2 rounded-lg border border-slate-700">
+          📋 Copiar Comunicado
+        </button>
+        <a id="modalWhatsAppBtn" href="#" target="_blank" class="w-full sm:w-auto text-center text-xs font-bold text-slate-950 bg-emerald-400 hover:bg-emerald-300 px-4 py-2 rounded-lg transition-all shadow-md shadow-emerald-500/20">
+          💬 Solicitar Entrevista por WhatsApp →
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PITCH GENERATOR MODAL -->
+  <div id="pitchModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full shadow-2xl p-5">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-base font-bold text-white flex items-center gap-1.5">
+          <span>⚡</span> Generador de Pitch Rápido
+        </h3>
+        <button onclick="closePitchModal()" class="w-7 h-7 rounded-lg bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center text-sm">✕</button>
+      </div>
+      <p class="text-xs text-slate-300 mb-3">
+        Texto preformateado para editores y productores:
+      </p>
+      
+      <textarea id="quickPitchText" class="w-full h-40 p-3 bg-slate-950 border border-slate-800 rounded-xl text-xs text-slate-200 font-mono focus:outline-none focus:border-amber-400" readonly>Hola [Nombre del Editor/Periodista],
+
+Te escribo porque puede interesarte la historia de COMBICALIMBA (Flor Cernuschi y Gise Ares). Salieron en marzo de 2019 desde Munro (Buenos Aires) en una Kombi '82 y, tras más de 7 años, 101.000 km y una evolución estratégica a una Ford Transit, acaban de completar toda América alcanzando Prudhoe Bay (Alaska).
+
+No es solo un viaje: Flor es Lic. en RRPP y Coach Ontológica, y Gise Desarrolladora Web e Instructora de Buceo. Gestionan clientes en todo el mundo por internet satelital mientras bucean destinos inexplorados del continente.
+
+Tienen disponibilidad para coordinar entrevistas vía streaming satelital o WhatsApp directo (+54 9 11 5384-2626).
+
+Instagram: @combicalimbaok</textarea>
+
+      <div class="mt-3 flex justify-end gap-2">
+        <button onclick="copyQuickPitch()" id="pitchCopyBtn" class="px-4 py-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs rounded-lg transition-all">
+          Copiar Pitch al Portapapeles
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-slate-800 bg-slate-950 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-4">
+      <p class="text-slate-400 font-semibold mb-1">COMBICALIMBA • Media Room & Press Suite 2026</p>
+      <p>Flor Cernuschi & Gise Ares • De Munro a Prudhoe Bay (Alaska)</p>
+      <div class="mt-3 flex justify-center gap-3 text-slate-400">
+        <a href="https://instagram.com/combicalimbaok" target="_blank" class="hover:text-amber-400">Instagram: @combicalimbaok</a>
+        <span>•</span>
+        <a href="https://wa.me/5491153842626" target="_blank" class="hover:text-emerald-400">WhatsApp: +54 9 11 5384-2626</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DATA & APP LOGIC -->
+  <script>
+    const articles = [
+      {
+        id: 1,
+        category: "lifestyle",
+        badge: "Estilo de Vida",
+        icon: "🚐",
+        format: "Entrevista / Especial",
+        title: "Una vida nómada recorriendo América sobre ruedas",
+        subtitle: "De Munro al Océano Ártico: 7 años de evolución nómada y 101.000 km cruzando el continente sobre ruedas",
+        summary: "La evolución desde la clásica Kombi '82 hasta la moderna Ford Transit ('Calimba 2.0'). Cómo diseñar un hogar autosuficiente capaz de soportar desde el calor del desierto hasta los fríos subárticos de Alaska.",
+        body: "La vida nómada de Flor Cernuschi y Gise Ares no nació como una aventura improvisada, sino tras dos años de rigurosa preparación mecánica y un plan de negocios corporativo que la propia ruta se encargó de flexibilizar.\n\nPartiendo desde Munro (Buenos Aires) en marzo de 2019, la travesía que comenzó con la mítica Kombi VW modelo 82 evolucionó con los años hasta transformarse en una expedición continental integral. Tras atravesar el Cono Sur, Centroamérica y Norteamérica, el arribo a Prudhoe Bay —el punto más septentrional accesible por carretera en Alaska— corona un modelo de vida sobre cuatro ruedas donde el hogar, la autonomía energética y la exploración conviven sin atarse a un código postal fijo.",
+        hooks: [
+          "La metamorfosis de viajar en una Kombi clásica a una camper de alta confiabilidad para rutas extremas.",
+          "Cómo se gestiona la logística de cruzar fronteras internacionales a lo largo de 7 años ininterrumpidos.",
+          "El aprendizaje de soltar la rigidez de los planes de oficina para abrazar la flexibilidad del camino."
+        ]
+      },
+      {
+        id: 2,
+        category: "lifestyle",
+        badge: "Crónica & Sociedad",
+        icon: "🌎",
+        format: "Crónica / Reportaje",
+        title: "Años viajando por el continente",
+        subtitle: "Más de 100.000 kilómetros de transformación: la travesía continental que redefinió los límites de Combicalimba",
+        summary: "El balance de haber alcanzado Prudhoe Bay tras años de ruta. La transformación de la mirada cuando el viaje no se mide en semanas de vacaciones sino en años de habitar el territorio.",
+        body: "Cruzar América de sur a norte no es simplemente acumular sellos en el pasaporte, sino atravesar todas las realidades geográficas, sociales y climáticas del planeta.\n\nDesde las rutas patagónicas y las alturas andinas de Bolivia hasta los fríos bajo cero del Círculo Polar Ártico, Combicalimba ha recorrido más de 101.000 kilómetros. Siete años de ruta permitieron a Flor y Gise experimentar cómo el paso del tiempo en movimiento transforma las prioridades, convirtiendo una meta que alguna vez pareció desmesurada en un hito de perseverancia y crecimiento personal.",
+        hooks: [
+          "Crónica en primera persona del hito al tocar las aguas del Ártico en Prudhoe Bay.",
+          "La evolución del viaje: cómo se vive el tiempo cuando la vida no se mide en semanas sino en años.",
+          "Contrastes geográficos y culturales entre los extremos del continente americano."
+        ]
+      },
+      {
+        id: 3,
+        category: "lifestyle",
+        badge: "Desmitificación",
+        icon: "🛣️",
+        format: "Opinión / Especial",
+        title: "La ruta como forma de vida, no como vacaciones",
+        subtitle: "Vivir en la ruta sin filtro de Instagram: desmitificar el vanlife a través de la disciplina y el trabajo real",
+        summary: "Qué pasa cuando el motor se rompe en el altiplano boliviano o quedás varada 3 meses en Salta. La gestión emocional, acuerdos de convivencia 24/7 y la disciplina detrás del viaje.",
+        body: "El relato de las redes sociales suele reducir la vida sobre ruedas a postales idílicas frente al mar. La realidad cotidiana de Combicalimba muestra el reverso: gestionar averías mecánicas complejas (como fundir un motor en el altiplano boliviano), atravesar cuarentenas sanitarias, resolver la provisión de agua y climatización, y coordinar entregas laborales en medio de la mudanza permanente.\n\nPara Flor y Gise, la ruta no es una pausa laboral ni un escape, sino un diseño de vida deliberado que exige profesionalismo, acuerdos de convivencia claros y la capacidad de anclar el centro interno mientras el entorno cambia a diario.",
+        hooks: [
+          "La gestión de crisis en ruta: qué hacer cuando el vehículo se rompe a miles de kilómetros de casa.",
+          "Convivencia 24/7 en espacios reducidos: salud emocional, límites y comunicación asertiva.",
+          "La rutina invisible: cómo se compatibilizan las tareas domésticas, mecánicas y profesionales sobre ruedas."
+        ]
+      },
+      {
+        id: 4,
+        category: "buceo",
+        badge: "Buceo & Ambiente",
+        icon: "🤿",
+        format: "Reportaje / Deportes",
+        title: "Bucear América bajo el agua",
+        subtitle: "Bucear el continente de punta a punta: la expedición que une la tierra firme con los fondos marinos de América",
+        summary: "Como instructoras internacionales SDI y FRTI, exploran ecosistemas acuáticos de altura, arrecifes y aguas frías, formando buzos y agentes multiplicadores de conservación.",
+        body: "Mientras la mayoría de las expediciones overland se limitan a la superficie terrestre, Combicalimba lleva una doble bitácora: de asfalto y subacuática.\n\nCon certificaciones internacionales como instructoras de Scuba Diving International (SDI) y First Response Training (FRTI), el agua ha sido su brújula y escuela continua. A lo largo del continente, han impartido certificaciones, formado redes de agentes multiplicadores y buceado en ecosistemas extraordinarios —desde lagunas cordilleranas hasta costas remotas del Pacífico norte— demostrando que el respeto ecológico por la tierra es inseparable de la conservación marina.",
+        hooks: [
+          "La experiencia de inmersión en sitios de buceo singulares a lo largo de toda América.",
+          "El agua como metodología de vida: presencia, control de flotabilidad y adaptación al entorno.",
+          "La formación de buzos y primeros respondientes como pilar de impacto comunitario en ruta."
+        ]
+      },
+      {
+        id: 5,
+        category: "negocios",
+        badge: "Economía Remota",
+        icon: "💼",
+        format: "Negocios / Emprendedores",
+        title: "Sostenibilidad y trabajo remoto",
+        subtitle: "Economía nómada y desarrollo profesional: cómo crecer laboralmente sin atarse a un escritorio fijo",
+        summary: "Cómo integrar el coaching ontológico, desarrollo de plataformas web y la consultoría estratégica con clientes de todo el mundo para autofinanciar la travesía.",
+        body: "Uno de los mayores mitos del nomadismo es que viajar implica pausar la carrera o depender de ahorros transitorios. Combicalimba nació desde el ámbito corporativo y consolidó un modelo de trabajo remoto altamente profesionalizado.\n\nMientras Gise se especializó en desarrollo web y gestión tecnológica, Flor se certificó como Coach Ontológica Profesional, complementando su formación en Relaciones Públicas. Juntas combinan consultoría estratégica, sesiones de coaching internacional, desarrollo de plataformas digitales y capacitaciones de buceo, demostrando que viajar es la forma en que eligen expandir sus carreras y proyectos.",
+        hooks: [
+          "Diversificación inteligente de ingresos: de la formación técnica a los servicios digitales.",
+          "La transición del entorno corporativo tradicional a una estructura de consultoría remota en movimiento.",
+          "Estrategias financieras para costear una expedición continental a largo plazo."
+        ]
+      },
+      {
+        id: 6,
+        category: "tech",
+        badge: "Tech & IA",
+        icon: "🧠",
+        format: "Innovación / Tech",
+        title: "Tecnología e Inteligencia Artificial",
+        subtitle: "Nómadas 4.0: Starlink, inteligencia artificial y plataformas digitales al servicio de la expedición moderna",
+        summary: "El kit digital de alto rendimiento: uso de modelos de IA para optimizar flujos de trabajo y contenidos, sumado a conectividad satelital en puntos remotos.",
+        body: "La evolución de Combicalimba hacia su versión 2.0 estuvo profundamente marcada por la incorporación de herramientas tecnológicas de vanguardia.\n\nLa integración de internet satelital Starlink les permite realizar videollamadas con clientes, impartir mentorías y desplegar código desde campamentos aislados en la naturaleza. Asimismo, el uso activo de Inteligencia Artificial generativa optimiza sus flujos de trabajo en creación de contenidos, redacción de guiones, marketing digital y planificación logística, convirtiendo a su camper van en un nodo de alta productividad digital.",
+        hooks: [
+          "La oficina móvil del futuro: kit tecnológico imprescindible para nómadas digitales de alto rendimiento.",
+          "Casos de uso prácticos de IA en la gestión de contenidos, optimización de tiempos y automatización.",
+          "El impacto de la conectividad satelital en la viabilidad de expediciones extremas."
+        ]
+      },
+      {
+        id: 7,
+        category: "lifestyle",
+        badge: "Familia Multiespecie",
+        icon: "🐕",
+        format: "Lifestyle / Mascotas",
+        title: "Viajar por América con perros",
+        subtitle: "Familia multiespecie en ruta: la experiencia, retos sanitarios y lecciones de cruzar fronteras con perros",
+        summary: "La experiencia de cruzar fronteras con Gaspar (y la huella que dejó en Bolivia) y la vida actual con Duque. Sanidad, certificados, climatización y tenencia responsable.",
+        body: "El viaje de Combicalimba ha estado indisolublemente ligado a sus compañeros de cuatro patas.\n\nLa experiencia con Gaspar —cuya urgencia veterinaria en caminos complejos de Bolivia marcó un antes y un después en la toma de decisiones del proyecto— enseñó la importancia crítica de la prevención y la seguridad en ruta. Hoy, junto a su perro Duque, Flor y Gise demuestran cómo gestionar trámites aduaneros internacionales, cuarentenas sanitarias y el acondicionamiento térmico del vehículo para garantizar el bienestar animal en climas extremos, mostrando que las mascotas son parte indivisible de la familia viajera.",
+        hooks: [
+          "Guía práctica para cruzar fronteras con animales en Sudamérica, Centroamérica y Norteamérica.",
+          "Adaptaciones del vehículo pensadas específicamente para la seguridad y confort de las mascotas.",
+          "El duelo y la memoria: cómo transitar la pérdida de un compañero animal en movimiento."
+        ]
+      },
+      {
+        id: 8,
+        category: "tech",
+        badge: "Ingeniería & Camper",
+        icon: "🏕️",
+        format: "Diseño / DIY / Motor",
+        title: "Microarquitectura y autosuficiencia",
+        subtitle: "De la Kombi '82 a Calimba 2.0: la evolución técnica hacia la autosuficiencia total sobre ruedas",
+        summary: "Cómo se diseña una Ford Transit para albergar 2 puestos de trabajo profesionales, equipos de buceo, cocina, agua y banco de baterías solares sin perder confort.",
+        body: "La decisión de despedir a su histórica Kombi Volkswagen tras quedar varadas tres meses en Salta y dar el salto a una Ford Transit en abril de 2024 («Calimba 2.0») no fue un mero cambio estético: fue una decisión estratégica para elevar la seguridad y la fiabilidad laboral.\n\nCon un diseño pensado para la autosuficiencia, Calimba cuenta con un sistema robusto de paneles solares y baterías para abastecer computadoras y equipos, aislamiento térmico para resistir desiertos y el Ártico, y espacio optimizado para almacenar equipo de buceo y herramientas de trabajo.",
+        hooks: [
+          "Anatomía de una camper van profesional: energía solar, agua, climatización y almacenamiento.",
+          "La difícil decisión de cambiar de vehículo para no limitar las oportunidades laborales.",
+          "Consejos para diseñar una casa rodante funcional para trabajar a tiempo completo."
+        ]
+      },
+      {
+        id: 9,
+        category: "lifestyle",
+        badge: "Cultura & Identidad",
+        icon: "🇦🇷",
+        format: "Cultural / Entrevista",
+        title: "La mirada argentina sobre Latinoamérica",
+        subtitle: "El continente con acento argentino: mates, lazos comunitarios y el desarmado de prejuicios en el camino",
+        summary: "El mate como pasaporte de diplomacia cotidiana. La reflexión sobre la solidaridad comunitaria que hermana a los países de América de sur a norte.",
+        body: "Partir desde Munro con el mate bajo el brazo y una forma abierta de vincularse permitió a Combicalimba construir un puente cultural en cada parada.\n\nA través de conversaciones en talleres mecánicos de pueblo, parajes rurales y campamentos compartidos, Flor y Gise han recogido una visión profunda de América Latina: una región donde la solidaridad comunitaria supera cualquier relato de inseguridad y donde abrir la puerta al viajero es una constante que hermana a los países del continente.",
+        hooks: [
+          "El mate y la charla de sobremesa como herramientas de diplomacia y conexión humana.",
+          "La generosidad desinteresada en los rincones rurales del Cono Sur y la región andina.",
+          "Cómo cambia la autopercepción de la identidad argentina al integrarse con otras culturas hermanas."
+        ]
+      },
+      {
+        id: 10,
+        category: "lifestyle",
+        badge: "Historias Humanas",
+        icon: "🌎",
+        format: "Crónica Humana",
+        title: "Las historias de las personas en el camino",
+        subtitle: "«Calimba trasciende la camioneta»: la red humana y las voluntades que empujaron el viaje hasta Alaska",
+        summary: "Mecánicos de pueblo, anfitriones solidarios y personas clave que aparecieron cuando la ruta se ponía difícil. El valor humano que no sale en las postales.",
+        body: "Para Combicalimba, los verdaderos hitos no se miden en paisajes, sino en personas.\n\nCuando el motor de la Kombi se destruyó en Bolivia o durante los meses de incertidumbre en Salta, fueron las voluntades de terceros, los mecánicos de pueblo y las familias locales las que permitieron salir adelante. Este enfoque periodístico pone el foco en los rostros anónimos de América: aquellos que brindaron ayuda desinteresada, las organizaciones que confiaron en sus programas educativos y las comunidades que demostraron que la verdadera riqueza del viaje reside en los vínculos humanos tejidos en el camino.",
+        hooks: [
+          "Crónicas de rescate y generosidad comunitaria en momentos críticos de la travesía.",
+          "El impacto bidireccional entre los viajeros overlanders y los anfitriones locales.",
+          "El viaje como experiencia de escucha activa y empatía social."
+        ]
+      },
+      {
+        id: 11,
+        category: "buceo",
+        badge: "Rutas Secretas",
+        icon: "🤿",
+        format: "Guía / Exclusivo",
+        title: "Destinos de buceo fuera de las guías",
+        subtitle: "Bucear lo invisible: la ruta subacuática por rincones vírgenes y lagunas de altura de América",
+        summary: "Cómo acceder y registrar inmersiones en ojos de agua, lagunas andinas a miles de metros y caletas solitarias que no figuran en los paquetes comerciales.",
+        body: "El turismo convencional suele agotar los mismos circuitos marinos de siempre. Combicalimba, gracias a la combinación de transporte autónomo y equipamiento técnico propio, ha explorado sitios acuáticos fuera del radar comercial: lagunas de altura en la cordillera, canteras de aguas transparentes, ríos interiores y caletas desoladas en el Pacífico norte.\n\nUn ángulo que cruza la exploración geográfica no convencional con la divulgación científica y la pasión por descubrir el continente bajo la superficie.",
+        hooks: [
+          "Los desafíos técnicos de bucear en altura y en aguas frías no exploradas comercialmente.",
+          "La logística de transportar compresores, tanques y trajes dentro de una casa rodante.",
+          "Promoción de un buceo exploratorio, ético y de bajo impacto ambiental."
+        ]
+      },
+      {
+        id: 12,
+        category: "negocios",
+        badge: "Finanzas en Viaje",
+        icon: "💰",
+        format: "Finanzas Personales / Guía",
+        title: "Finanzas en viaje: gestión del dinero y presupuestos en ruta",
+        subtitle: "De la supervivencia a la previsibilidad económica: cómo presupuestar, ahorrar y gestionar fondos cruzando fronteras",
+        summary: "Uso de TravelSpend y Fuelio, diversificación de monedas, fondos de reserva para emergencias mecánicas y la diferencia entre gastar como turista vs. administrar como nómada.",
+        body: "Uno de los mayores desafíos del viaje a largo plazo es la sostenibilidad y el control financiero. A lo largo de más de 7 años cruzando decenas de economías con monedas distintas, inflaciones dispares y costos variables de combustible, Combicalimba perfeccionó un método riguroso de gestión económica.\n\nLejos de la improvisación, utilizan aplicaciones de control diario como TravelSpend y Fuelio para auditar costos de vida, mantenimiento mecánico y consumos por kilómetro. Este ángulo explora la construcción de fondos de reserva para emergencias mayores (como el cambio de motor en Bolivia o la transición a Calimba 2.0), la gestión de pagos internacionales y la mentalidad financiera necesaria para no agotar los recursos en la ruta.",
+        hooks: [
+          "Turista vs. Nómada: cómo cambian los patrones de gasto cuando no hay fecha de regreso.",
+          "Herramientas y apps imprescindibles para registrar cada centavo en múltiples monedas.",
+          "Cómo armar un fondo de contingencia mecánica para evitar quedar varadas en la ruta."
+        ]
+      }
+    ];
+
+    function getWhatsAppLink(art) {
+      const msg = `Hola Flor y Gise! Me gustaría hacerles una nota/entrevista relacionada con el tema #${art.id < 10 ? '0' + art.id : art.id}: "${art.title}" (${art.badge}).`;
+      return `https://wa.me/5491153842626?text=${encodeURIComponent(msg)}`;
+    }
+
+    function renderArticles(filter = 'all') {
+      const grid = document.getElementById('articlesGrid');
+      grid.innerHTML = '';
+      
+      const filtered = filter === 'all' 
+        ? articles 
+        : articles.filter(a => a.category === filter);
+
+      filtered.forEach(art => {
+        const card = document.createElement('div');
+        card.className = "card-hover p-4 rounded-2xl bg-slate-900 border border-slate-800/90 flex flex-col justify-between";
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-bold text-amber-400">#${art.id < 10 ? '0' + art.id : art.id} • ${art.badge}</span>
+              <span>${art.icon}</span>
+            </div>
+            <h3 class="text-sm font-bold text-white leading-snug">${art.title}</h3>
+            <p class="text-[11px] font-semibold text-slate-300 mt-1 italic line-clamp-2">«${art.subtitle}»</p>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed line-clamp-2">${art.summary}</p>
+          </div>
+          <div class="mt-4 pt-2.5 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <button onclick="openModal(${art.id})" class="text-xs font-bold text-sky-400 hover:text-sky-300 transition-colors">
+              Leer nota →
+            </button>
+            <a href="${getWhatsAppLink(art)}" target="_blank" class="text-[11px] font-bold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2.5 py-1 rounded-lg transition-all">
+              💬 Entrevista
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterArticles(cat) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        if(btn.dataset.filter === cat) {
+          btn.className = "filter-btn active px-2.5 py-1 rounded-lg bg-amber-400 text-slate-950 font-bold";
+        } else {
+          btn.className = "filter-btn px-2.5 py-1 rounded-lg bg-slate-900 text-slate-300 font-semibold border border-slate-800";
+        }
+      });
+      renderArticles(cat);
+    }
+
+    let currentModalArticle = null;
+
+    function openModal(id) {
+      const art = articles.find(a => a.id === id);
+      if(!art) return;
+      currentModalArticle = art;
+      
+      document.getElementById('modalCategory').innerText = `#${art.id < 10 ? '0'+art.id : art.id} • ${art.badge}`;
+      document.getElementById('modalFormat').innerText = `Formato: ${art.format}`;
+      document.getElementById('modalTitle').innerText = art.title;
+      document.getElementById('modalSubtitle').innerText = `«${art.subtitle}»`;
+      document.getElementById('modalBody').innerText = art.body.replace(/\\n/g, '\n');
+      
+      const hooksList = document.getElementById('modalHooks');
+      hooksList.innerHTML = '';
+      art.hooks.forEach(h => {
+        const li = document.createElement('li');
+        li.innerText = h;
+        hooksList.appendChild(li);
+      });
+
+      document.getElementById('modalWhatsAppBtn').href = getWhatsAppLink(art);
+      document.getElementById('copyModalBtn').innerText = "📋 Copiar Comunicado";
+      document.getElementById('articleModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('articleModal').classList.add('hidden');
+    }
+
+    function copyModalContent() {
+      if(!currentModalArticle) return;
+      const fullText = `COMUNICADO / ÁNGULO EDITORIAL: ${currentModalArticle.title.toUpperCase()}\n\nTitular: ${currentModalArticle.subtitle}\n\n${currentModalArticle.body.replace(/\\n/g, '\n')}\n\nGanchos periodísticos sugeridos:\n${currentModalArticle.hooks.map(h => '• ' + h).join('\n')}\n\nContacto WhatsApp: +54 9 11 5384-2626 | Instagram: @combicalimbaok`;
+      
+      navigator.clipboard.writeText(fullText).then(() => {
+        document.getElementById('copyModalBtn').innerText = "✅ ¡Copiado!";
+        setTimeout(() => {
+          document.getElementById('copyModalBtn').innerText = "📋 Copiar Comunicado";
+        }, 2000);
+      });
+    }
+
+    function openPitchGenerator() {
+      document.getElementById('pitchModal').classList.remove('hidden');
+    }
+
+    function closePitchModal() {
+      document.getElementById('pitchModal').classList.add('hidden');
+    }
+
+    function copyQuickPitch() {
+      const text = document.getElementById('quickPitchText').value;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('pitchCopyBtn');
+        btn.innerText = "✅ ¡Pitch Copiado!";
+        setTimeout(() => {
+          btn.innerText = "Copiar Pitch al Portapapeles";
+          closePitchModal();
+        }, 1500);
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderArticles('all');
+    });
+  </script>
+</body>
+</html>
